@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: rgb(58, 58, 58);
+}
+
+.header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 1rem 2rem;
+  background: rgb(13,13,13);
+  background: linear-gradient(128deg, rgba(13,13,13,1) 0%, rgba(61,61,61,1) 100%);
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  .status-box {
+    width: 80%;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: .5rem;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    .status-number {
+      font-size: 3rem;
+    }
+
+    .positif {
+      color: rgb(233, 233, 0);
+    }
+    .perawatan {
+      color: rgb(223, 100, 0);
+    }
+    .sembuh {
+      color: rgb(0, 196, 0);
+    }
+    .meninggal {
+      color: rgb(223, 0, 0);
+    }
+  }
+}
+
+.data-container {
+  background-color: rgb(32, 32, 32);
+  color: #fff;
+  margin-top: 20px;
+  .data-box{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    .data-pie {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+
+  .data-provinsi {
+    margin: 50px auto;
+    overflow-x: auto;
+  }
+
+  .spesifik-provinsi {
+    text-align: center;
+    select {
+      margin: 10px auto;
+      padding: 8px 1rem;
+      text-align: center;
+      background-color: rgba(61,61,61,1);
+      border-radius: 0.25rem;
+      color: #fff;
+      border: none;
+    }
+
+  }
+}
+
+.footer {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgb(13,13,13);
+  background: linear-gradient(325deg, rgba(13,13,13,1) 0%, rgba(61,61,61,1) 100%);
+}
+
+@media (max-width: 400px) {
+  header {
+    h1 {
+      font-size: 20px;
+    }
+  }
+}

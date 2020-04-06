@@ -97,12 +97,21 @@ body {
 }
 
 .footer {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
   color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
   background: rgb(13,13,13);
   background: linear-gradient(325deg, rgba(13,13,13,1) 0%, rgba(61,61,61,1) 100%);
+  .make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 400px) {

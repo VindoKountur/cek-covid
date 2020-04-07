@@ -1,6 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
-import { RectGraduallyShowLoading } from 'react-loadingg';
 
 export const DataContext = createContext();
 
@@ -12,8 +11,6 @@ export const DataProvider = (props) => {
     'https://make-life-easier.herokuapp.com/api/covid/provinsi';
   const [data, setData] = useState({});
   const [dataProvinsi, setDataProvinsi] = useState([]);
-
-  const loading = <RectGraduallyShowLoading color={'#FFF'} />;
 
   const fetchData = () => {
     axios
@@ -40,7 +37,6 @@ export const DataProvider = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    // <div>{loading}</div>
     <DataContext.Provider
       value={[data, setData, dataProvinsi, setDataProvinsi]}
     >

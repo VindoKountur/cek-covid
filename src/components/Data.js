@@ -102,8 +102,8 @@ export const Data = ({ loading }) => {
         <div className='data-pie'>
           <Pie height={300} width={300} data={pieData} options={options} />
         </div>
+        <h2 style={{ marginTop: '30px' }}>Data Provinsi</h2>
         <div className='data-provinsi'>
-          <h2>Data Provinsi</h2>
           <Bar
             height={450}
             width={1200}

@@ -6,16 +6,16 @@ export const Footer = () => {
     <footer className='footer'>
       <div className='copyright-text'>
         <p>&copy; 2020, Vindo K </p>
-      </div>
-      <div className='provided'>
-        Data by:{' '}
-        <a
-          href='https://kawalcorona.com'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Kawalcorona.com
-        </a>
+        <div className='provided'>
+          Data by:{' '}
+          <a
+            href='https://kawalcorona.com'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Kawalcorona.com
+          </a>
+        </div>
       </div>
       <div className='find-me' style={{ cursor: 'pointer' }}>
         <a
